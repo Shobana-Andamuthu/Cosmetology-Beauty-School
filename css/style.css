@@ -5805,3 +5805,444 @@ p:last-child {
     min-height: auto !important;
   }
 }
+
+
+/* ==========================================================================
+   USER REFINEMENTS: ICONS, BADGES, AND RESPONSIVE PRE-FOOTER SECTION
+   ========================================================================== */
+
+/* 1. Pastel Category Cards (.age-card) Icons & Alignment */
+.age-card-top {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-height: 40px !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.age-card-icon {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: var(--rose-pink) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+  flex-shrink: 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+[data-theme="dark"] .age-card-icon {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #FF75A2 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+.age-card:hover .age-card-icon {
+  transform: scale(1.1) !important;
+  background: #FFFFFF !important;
+  color: #D94378 !important;
+}
+
+[data-theme="dark"] .age-card:hover .age-card-icon {
+  background: rgba(217, 67, 120, 0.35) !important;
+  color: #FFFFFF !important;
+}
+
+/* 2. High-Contrast Dazzling Pre-Footer Circular Stamp */
+.discount-stamp {
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 50% !important;
+  border: 2px dashed #FF4A88 !important;
+  background: radial-gradient(circle, rgba(217, 67, 120, 0.45) 0%, rgba(20, 28, 40, 0.98) 100%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  transform: rotate(-8deg) !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 6px 25px rgba(217, 67, 120, 0.4), inset 0 0 16px rgba(255, 117, 162, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.discount-stamp strong {
+  font-size: 1.95rem !important;
+  font-weight: 900 !important;
+  color: #FFFFFF !important;
+  text-shadow: 0 0 16px #FF2E74, 0 2px 8px rgba(0, 0, 0, 0.9) !important;
+  line-height: 1 !important;
+  letter-spacing: 0.06em !important;
+  margin-bottom: 4px !important;
+}
+
+.discount-stamp span {
+  font-size: 0.7rem !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 800 !important;
+  color: #FFE5EE !important;
+  text-transform: uppercase !important;
+  line-height: 1.25 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* 3. Mobile Navigation Dropdown Closed by Default */
+.mobile-sublinks {
+  display: none !important;
+  padding: 8px 0 8px 16px !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.mobile-sublinks.is-open {
+  display: flex !important;
+}
+
+.mobile-dropdown-header .dropdown-arrow {
+  transition: transform 0.3s ease !important;
+  transform: rotate(0deg) !important;
+}
+
+.mobile-dropdown-header.is-open .dropdown-arrow {
+  transform: rotate(180deg) !important;
+}
+
+/* 4. Pre-Footer Countdown Section Perfect Responsive Alignment */
+.offer-banner {
+  background: var(--card-bg) !important;
+  border-radius: 2rem !important;
+  padding: 3rem 3.5rem !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-md) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+[data-theme="dark"] .offer-banner {
+  background: #151F2C !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+.ob-inner {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 2.5rem !important;
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+}
+
+.ob-inner > div:first-child {
+  flex: 1 1 0% !important;
+  min-width: 0 !important;
+}
+
+.countdown {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.cd-box {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 1rem !important;
+  padding: 12px 14px !important;
+  min-width: 68px !important;
+  text-align: center !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+[data-theme="dark"] .cd-box {
+  background: #1E2D3D !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.cd-num {
+  font-family: var(--font-serif) !important;
+  font-size: 1.6rem !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  color: var(--heading-text) !important;
+}
+
+.cd-label {
+  font-size: 0.65rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--muted-text) !important;
+  margin-top: 4px !important;
+}
+
+@media (max-width: 991px) {
+  .offer-banner {
+    padding: 2.25rem 1.75rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .ob-inner {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 2rem !important;
+    align-items: center !important;
+  }
+  .ob-inner p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .ob-inner div[style*="display: flex"] {
+    justify-content: center !important;
+  }
+  .countdown {
+    justify-content: center !important;
+  }
+  .discount-stamp {
+    transform: rotate(0deg) !important;
+    margin: 1rem auto 0 auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .cd-box {
+    min-width: 58px !important;
+    padding: 8px 10px !important;
+  }
+  .cd-num {
+    font-size: 1.35rem !important;
+  }
+  .ob-inner h2 {
+    font-size: 1.65rem !important;
+  }
+  .ob-inner div[style*="display: flex"] {
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+  #final-enroll-btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
+
+
+/* ==========================================================================
+   OFFER BANNER DEEP NAVY CONTRAST & MOBILE DROPDOWN FIXES
+   ========================================================================== */
+
+/* Dropdown styling */
+.mobile-sublinks {
+  display: none !important;
+  padding: 10px 0 10px 16px !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.mobile-sublinks.is-open {
+  display: flex !important;
+}
+
+.mobile-dropdown-header {
+  cursor: pointer !important;
+  user-select: none !important;
+}
+
+.mobile-dropdown-header .dropdown-arrow {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transform: rotate(0deg) !important;
+}
+
+.mobile-dropdown-header.is-open .dropdown-arrow {
+  transform: rotate(180deg) !important;
+}
+
+/* Pre-Footer Offer Banner: Rich Deep Navy in BOTH Themes with White Text */
+.offer-banner {
+  background: linear-gradient(135deg, #17212D 0%, #223042 100%) !important;
+  border-radius: 2rem !important;
+  padding: 3.25rem 3.5rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .offer-banner {
+  background: linear-gradient(135deg, #0F1722 0%, #1A2636 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+.ob-inner {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 2.5rem !important;
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+}
+
+.ob-inner > div:first-child {
+  flex: 1 1 0% !important;
+  min-width: 0 !important;
+}
+
+.ob-tag {
+  display: inline-block !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #FF75A2 !important;
+  background: rgba(217, 67, 120, 0.28) !important;
+  border: 1px solid rgba(255, 117, 162, 0.55) !important;
+  padding: 6px 14px !important;
+  border-radius: 9999px !important;
+  margin-bottom: 1rem !important;
+}
+
+.ob-inner h2 {
+  font-size: 2.25rem !important;
+  font-weight: 900 !important;
+  line-height: 1.25 !important;
+  color: #FFFFFF !important;
+  margin-bottom: 0.85rem !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+.ob-inner p {
+  font-size: 1.05rem !important;
+  line-height: 1.55 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  max-width: 650px !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.countdown {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.cd-box {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border-radius: 1rem !important;
+  padding: 12px 14px !important;
+  min-width: 68px !important;
+  text-align: center !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.cd-num {
+  font-family: var(--font-serif) !important;
+  font-size: 1.65rem !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  color: #FFFFFF !important;
+}
+
+.cd-label {
+  font-size: 0.65rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  margin-top: 4px !important;
+}
+
+.discount-stamp {
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 50% !important;
+  border: 2px dashed #FF4A88 !important;
+  background: radial-gradient(circle, rgba(217, 67, 120, 0.45) 0%, rgba(15, 23, 34, 0.98) 100%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  transform: rotate(-8deg) !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 6px 25px rgba(217, 67, 120, 0.4), inset 0 0 16px rgba(255, 117, 162, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.discount-stamp strong {
+  font-size: 1.95rem !important;
+  font-weight: 900 !important;
+  color: #FFFFFF !important;
+  text-shadow: 0 0 16px #FF2E74, 0 2px 8px rgba(0, 0, 0, 0.9) !important;
+  line-height: 1 !important;
+  letter-spacing: 0.06em !important;
+  margin-bottom: 4px !important;
+}
+
+.discount-stamp span {
+  font-size: 0.7rem !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 800 !important;
+  color: #FFE5EE !important;
+  text-transform: uppercase !important;
+  line-height: 1.25 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+@media (max-width: 991px) {
+  .offer-banner {
+    padding: 2.25rem 1.75rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .ob-inner {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 2rem !important;
+    align-items: center !important;
+  }
+  .ob-inner p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .ob-inner div[style*="display: flex"] {
+    justify-content: center !important;
+  }
+  .countdown {
+    justify-content: center !important;
+  }
+  .discount-stamp {
+    transform: rotate(0deg) !important;
+    margin: 1rem auto 0 auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .cd-box {
+    min-width: 58px !important;
+    padding: 8px 10px !important;
+  }
+  .cd-num {
+    font-size: 1.35rem !important;
+  }
+  .ob-inner h2 {
+    font-size: 1.65rem !important;
+  }
+  .ob-inner div[style*="display: flex"] {
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+  #final-enroll-btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
