@@ -5124,6 +5124,19 @@ p:last-child {
   color: #FFFFFF;
 }
 
+@media (max-width: 600px) {
+  .back-to-top-btn {
+    bottom: 20px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+  [dir="rtl"] .back-to-top-btn {
+    left: 16px;
+    right: auto;
+  }
+}
+
 /* ==========================================================================
    DARK MODE ENHANCED CONTRAST & LEGIBILITY FIXES
    ========================================================================== */
