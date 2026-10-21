@@ -839,12 +839,24 @@ p:last-child {
   color: var(--heading-text);
   cursor: pointer;
   z-index: 1002;
-  transition: background var(--transition-fast);
+  transition: background var(--transition-fast), border-color var(--transition-fast);
   box-shadow: var(--shadow-sm);
+  padding: 0;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
 }
 
 .hamburger-btn:hover {
   background: var(--blush-pink);
+  border-color: var(--rose-pink);
+}
+
+.hamburger-btn:focus,
+.hamburger-btn:active,
+.hamburger-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 .hamburger-line {
@@ -918,13 +930,40 @@ p:last-child {
 .mobile-nav-close {
   width: 38px;
   height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: var(--soft-bg);
-  color: var(--heading-text);
-  font-size: 1.35rem;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: var(--soft-bg) !important;
+  color: var(--heading-text) !important;
+  border: 1px solid var(--border-subtle) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+  transition: all var(--transition-fast) !important;
+}
+
+.mobile-nav-close:hover {
+  background: var(--blush-pink) !important;
+  color: var(--rose-pink) !important;
+  transform: rotate(90deg) !important;
+}
+
+.mobile-nav-close:focus,
+.mobile-nav-close:active,
+.mobile-nav-close:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.mobile-nav-close svg {
+  width: 18px !important;
+  height: 18px !important;
+  display: block !important;
+  margin: auto !important;
 }
 
 .mobile-nav-links {
@@ -963,12 +1002,12 @@ p:last-child {
 
 .mobile-sublinks {
   padding-left: 14px;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 10px;
   margin-top: 8px;
   margin-bottom: 8px;
-  border-left: 2px solid var(--blush-pink);
+  border-left: 2px solid var(--rose-pink);
 }
 
 [dir="rtl"] .mobile-sublinks {
