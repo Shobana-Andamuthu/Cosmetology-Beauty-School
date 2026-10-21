@@ -6034,25 +6034,74 @@ p:last-child {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
 }
 
-/* 3. Mobile Navigation Dropdown Closed by Default */
+/* 3. Mobile Navigation Dropdown */
+.mobile-dropdown-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  cursor: pointer !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: var(--heading-text) !important;
+  padding: 8px 0 !important;
+  user-select: none !important;
+}
+
+.mobile-dropdown-header.active {
+  color: var(--rose-pink) !important;
+}
+
+.mobile-dropdown-header .dropdown-arrow {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transform: rotate(0deg) !important;
+  pointer-events: none !important;
+}
+
+.mobile-dropdown-header.is-open .dropdown-arrow {
+  transform: rotate(180deg) !important;
+}
+
 .mobile-sublinks {
-  display: none !important;
-  padding: 8px 0 8px 16px !important;
+  display: none;
+  padding: 8px 0 10px 16px !important;
   flex-direction: column !important;
-  gap: 10px !important;
+  gap: 8px !important;
+  margin-top: 4px !important;
+  margin-bottom: 6px !important;
+  border-left: 2px solid var(--rose-pink) !important;
+}
+
+[dir="rtl"] .mobile-sublinks {
+  padding: 8px 16px 10px 0 !important;
+  border-left: none !important;
+  border-right: 2px solid var(--rose-pink) !important;
 }
 
 .mobile-sublinks.is-open {
   display: flex !important;
 }
 
-.mobile-dropdown-header .dropdown-arrow {
-  transition: transform 0.3s ease !important;
-  transform: rotate(0deg) !important;
+.mobile-sublink {
+  font-size: 0.95rem !important;
+  color: var(--body-text) !important;
+  font-weight: 600 !important;
+  padding: 6px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  transition: all var(--transition-fast) !important;
 }
 
-.mobile-dropdown-header.is-open .dropdown-arrow {
-  transform: rotate(180deg) !important;
+.mobile-sublink:hover,
+.mobile-sublink.active {
+  color: var(--rose-pink) !important;
+  font-weight: 700 !important;
+  transform: translateX(4px) !important;
+}
+
+[dir="rtl"] .mobile-sublink:hover,
+[dir="rtl"] .mobile-sublink.active {
+  transform: translateX(-4px) !important;
 }
 
 /* 4. Pre-Footer Countdown Section Perfect Responsive Alignment */
@@ -6179,32 +6228,6 @@ p:last-child {
 /* ==========================================================================
    OFFER BANNER DEEP NAVY CONTRAST & MOBILE DROPDOWN FIXES
    ========================================================================== */
-
-/* Dropdown styling */
-.mobile-sublinks {
-  display: none !important;
-  padding: 10px 0 10px 16px !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-}
-
-.mobile-sublinks.is-open {
-  display: flex !important;
-}
-
-.mobile-dropdown-header {
-  cursor: pointer !important;
-  user-select: none !important;
-}
-
-.mobile-dropdown-header .dropdown-arrow {
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  transform: rotate(0deg) !important;
-}
-
-.mobile-dropdown-header.is-open .dropdown-arrow {
-  transform: rotate(180deg) !important;
-}
 
 /* Pre-Footer Offer Banner: Rich Deep Navy in BOTH Themes with White Text */
 .offer-banner {
