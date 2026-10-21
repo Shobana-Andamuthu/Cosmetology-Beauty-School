@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Student Account | BeautyPro Portal</title>
+  <meta name="description" content="Register your BeautyPro student account to track your curriculum hours, reserve training stations, and access licensing prep material.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Attractive Luxury Preloader -->
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo-ring">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="loader-logo-img">
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <span class="loader-text">BEAUTY ACADEMY</span>
+    </div>
+  </div>
+
+  <!-- Minimal Header for Registration -->
+  <header class="site-header" style="height: 72px;">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brand-logo" aria-label="BeautyPro Home">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="brand-logo-img" width="180" height="48">
+      </a>
+
+      <!-- Quick Toggles -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <button class="icon-toggle-btn rtl-toggle" aria-label="Switch text direction">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M3 8h13M13 4l4 4-4 4M21 16H8M11 20l-4-4 4-4"/>
+          </svg>
+        </button>
+
+        <button class="icon-toggle-btn theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="index.html" class="btn btn-secondary btn-sm">&larr; Back to Academy</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-wrapper">
+    <!-- Left Column: Image Panel -->
+    <div class="auth-image-panel">
+      <img src="assets/images/tools_cosmetics.jpg" alt="Cosmetics kit and salon tools" width="900" height="1200" loading="eager">
+      <div class="auth-image-caption">
+        <h2>Start Your Professional Legacy</h2>
+        <p>Join an inspiring community of aspiring stylists, estheticians, and beauty entrepreneurs building lifelong careers.</p>
+      </div>
+    </div>
+
+    <!-- Right Column: Registration Card -->
+    <div class="auth-form-panel">
+      <div class="auth-card">
+        <div style="text-align: center; margin-bottom: 28px;">
+          <span class="section-tag" style="margin-bottom: 10px;">STUDENT ENROLLMENT</span>
+          <h1 style="font-size: 2rem; margin-bottom: 6px;">Create Account</h1>
+          <p style="color: var(--muted-text); font-size: 0.95rem;">Register to access your student dashboard and learning resources.</p>
+        </div>
+
+        <form id="register-form" novalidate>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="reg-name" class="form-label">Full Name *</label>
+            <input type="text" id="reg-name" class="form-input" placeholder="Sarah Johnson" required>
+            <div class="invalid-feedback">Please enter your legal name (at least 2 characters).</div>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="reg-email" class="form-label">Email Address *</label>
+            <input type="email" id="reg-email" class="form-input" placeholder="sarah.johnson@student.beautypro.edu" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+
+          <!-- Program Selection -->
+          <div class="form-group">
+            <label for="reg-program" class="form-label">Enrolled Program *</label>
+            <select id="reg-program" class="form-select" required>
+              <option value="cosmetology" selected>Cosmetology Program (1,500 Hours)</option>
+              <option value="esthetics">Esthetics &amp; Skincare Track (600 Hours)</option>
+              <option value="nails">Nail Technology Specialist (400 Hours)</option>
+              <option value="makeup">Makeup Artistry &amp; Hair Design (300 Hours)</option>
+            </select>
+          </div>
+
+          <!-- Password Field with Toggle -->
+          <div class="form-group">
+            <label for="reg-password" class="form-label">Password *</label>
+            <div class="password-input-group">
+              <input type="password" id="reg-password" class="form-input" placeholder="Create a secure password" required>
+              <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+            <div class="invalid-feedback">Password must be at least 6 characters.</div>
+          </div>
+
+          <!-- Terms -->
+          <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 24px; font-size: 0.85rem; color: var(--muted-text);">
+            <input type="checkbox" id="terms-agree" checked required style="accent-color: var(--rose-pink); width: 16px; height: 16px; margin-top: 3px;">
+            <label for="terms-agree" style="cursor: pointer;">I agree to BeautyPro's <a href="#" style="color: var(--rose-pink);">Terms of Training</a> and <a href="#" style="color: var(--rose-pink);">Safety Protocols</a>.</label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-lg btn-full" id="reg-submit-btn">Create Account &amp; Enter Portal</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 0.925rem; color: var(--muted-text);">
+          Already have a student account?
+          <a href="login.html" style="color: var(--rose-pink); font-weight: 700; margin-left: 4px;">Log In Here</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+</html>

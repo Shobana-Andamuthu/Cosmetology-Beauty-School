@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Admissions | BeautyPro Beauty School</title>
+  <meta name="description" content="Connect with BeautyPro admissions advisors, schedule an in-person campus tour, or enquire about program schedules, kits, and tuition plans.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Attractive Luxury Preloader -->
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo-ring">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="loader-logo-img">
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <span class="loader-text">BEAUTY ACADEMY</span>
+    </div>
+  </div>
+
+
+  <!-- Shared Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brand-logo" aria-label="BeautyPro Home">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-light" width="165" height="46">
+        <img src="assets/images/logo_dark.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-dark" width="165" height="46">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Desktop Navigation">
+        <ul class="desktop-nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle" aria-expanded="false" id="home-dropdown-btn">
+              Home
+              <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu" aria-labelledby="home-dropdown-btn">
+              <a href="index.html" class="nav-dropdown-item">Home 1 — Graduate Success</a>
+              <a href="home-2.html" class="nav-dropdown-item">Home 2 — Editorial Split</a>
+            </div>
+          </li>
+          <li><a href="programs.html" class="nav-link">Programs</a></li>
+          <li><a href="instructors.html" class="nav-link">Instructors</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+
+        <!-- Unified Desktop Actions Group (Equal 12px Spacing Between All Buttons) -->
+        <div class="nav-actions-group">
+          <button class="icon-toggle-btn rtl-toggle" aria-label="Switch text direction (LTR / RTL)" title="Toggle RTL / LTR text direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 8h13M13 4l4 4-4 4M21 16H8M11 20l-4-4 4-4"/>
+            </svg>
+          </button>
+
+          <button class="icon-toggle-btn theme-toggle" aria-label="Toggle light / dark mode" title="Toggle Light / Dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a href="login.html" class="btn-nav-secondary">Login</a>
+          <a href="contact.html#section-enquiry-form" class="btn-nav-primary">Apply Now</a>
+        </div>
+      </nav>
+
+      <!-- Mobile & Tablet Header Controls -->
+      <div class="header-actions-mobile">
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-light" width="150" height="42">
+        <img src="assets/images/logo_dark.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-dark" width="150" height="42">
+      </div>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li>
+        <div class="mobile-dropdown-header" id="mobile-home-toggle">
+          <span>Home Pages</span>
+          <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+        <div class="mobile-sublinks">
+          <a href="index.html" class="mobile-sublink">Home 1 (Graduate Success)</a>
+          <a href="home-2.html" class="mobile-sublink">Home 2 (Editorial Split)</a>
+        </div>
+      </li>
+      <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
+      <li><a href="instructors.html" class="mobile-nav-link">Instructors</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+      <li><a href="dashboard.html" class="mobile-nav-link">Dashboard</a></li>
+    </ul>
+
+    <div class="mobile-nav-toggles">
+      <button class="mobile-toggle-btn rtl-toggle" aria-label="Switch text direction">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+          <path d="M3 8h13M13 4l4 4-4 4M21 16H8M11 20l-4-4 4-4"/>
+        </svg>
+        <span>RTL / LTR</span>
+      </button>
+      <button class="mobile-toggle-btn theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <span>Theme</span>
+      </button>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="login.html" class="btn btn-secondary btn-full">Login</a>
+      <a href="contact.html#section-enquiry-form" class="btn btn-primary btn-full">Apply Now</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- SECTION 1: HERO BANNER (LittleBloom Animated Banner with Breadcrumbs) -->
+    <section class="page-banner" id="contact-hero">
+      <div class="animated-bg" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+      </div>
+      <div class="container position-relative">
+        <span class="hero-badge"><i class="bi bi-chat-heart"></i> Admissions &amp; Visits</span>
+        <h1 class="mt-3">Get in Touch with BeautyPro</h1>
+        <p>We're here to answer questions regarding enrollment prerequisites, course schedules, kit supplies, campus tours, and financial assistance options.</p>
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <span>Contact Us</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ADMISSIONS CONTACT DETAILS (Unique 4-Channel Hub + Concierge Bar) -->
+    <section class="content-section section-bg-white" id="section-contact-info">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow"><i class="bi bi-headset me-1"></i> Direct Admissions Channels</span>
+          <h2 class="section-title">Admissions Contact Details</h2>
+          <p class="section-subtitle">Connect with dedicated academic advisors, schedule private tours, or request program curriculum guides directly.</p>
+        </div>
+
+        <div class="contact-channels-hub">
+          <!-- Channel 1: Toll-Free Hotline -->
+          <article class="contact-hub-card">
+            <div class="ch-top-meta">
+              <span class="ch-icon-wrapper" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+              <span class="ch-pill-badge ch-pill-live">
+                <span class="ch-live-dot"></span> Live Toll-Free
+              </span>
+            </div>
+            <h3>Admissions Desk</h3>
+            <a href="tel:8001234567" class="ch-main-value">(800) 123-4567</a>
+            <p class="ch-desc-note">Immediate guidance on enrollment prerequisites, tuition plans, and class schedule availability.</p>
+            <a href="tel:8001234567" class="ch-action-link">
+              <span>Call Advisor</span> &rarr;
+            </a>
+          </article>
+
+          <!-- Channel 2: Digital Enquiries & Syllabi -->
+          <article class="contact-hub-card">
+            <div class="ch-top-meta">
+              <span class="ch-icon-wrapper" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+              <span class="ch-pill-badge">&lt; 24hr Reply</span>
+            </div>
+            <h3>Email &amp; Records</h3>
+            <a href="mailto:admissions@beautypro.edu" class="ch-main-value">admissions@beautypro.edu</a>
+            <p class="ch-desc-note">Submit official transcripts, request digital course catalogs, or ask licensing board questions.</p>
+            <a href="mailto:admissions@beautypro.edu" class="ch-action-link">
+              <span>Email Admissions</span> &rarr;
+            </a>
+          </article>
+
+          <!-- Channel 3: Flagship Campus & Salon -->
+          <article class="contact-hub-card">
+            <div class="ch-top-meta">
+              <span class="ch-icon-wrapper" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"></path></svg></span>
+              <span class="ch-pill-badge">Free Parking</span>
+            </div>
+            <h3>Flagship Campus</h3>
+            <span class="ch-main-value" style="color: var(--heading-text);">128 Beauty Academy Way</span>
+            <p class="ch-desc-note">Suite 400, Riverside, CA 92501. Administrative offices &amp; student clinic floor.</p>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="ch-action-link">
+              <span>Get Directions</span> &rarr;
+            </a>
+          </article>
+
+          <!-- Channel 4: 1-on-1 Campus Tour & Advising -->
+          <article class="contact-hub-card">
+            <div class="ch-top-meta">
+              <span class="ch-icon-wrapper" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span>
+              <span class="ch-pill-badge">No Obligation</span>
+            </div>
+            <h3>Campus Experience</h3>
+            <span class="ch-main-value" style="color: var(--heading-text);">Guided Facility Tour</span>
+            <p class="ch-desc-note">Tour styling labs, observe live student services, and audit a guest lecture with an educator.</p>
+            <a href="#section-enquiry-form" class="ch-action-link">
+              <span>Reserve Tour Spot</span> &rarr;
+            </a>
+          </article>
+        </div>
+
+        <!-- Live Admissions Concierge Bar -->
+        <div class="admissions-concierge-bar">
+          <div class="acb-left">
+            <div class="acb-avatar-stack">
+              <img src="assets/images/student_emily.jpg" alt="Admissions Advisor Emily" class="acb-avatar" width="44" height="44">
+              <img src="assets/images/student_jessica.jpg" alt="Admissions Advisor Jessica" class="acb-avatar" width="44" height="44">
+              <img src="assets/images/student_taylor.jpg" alt="Admissions Advisor Taylor" class="acb-avatar" width="44" height="44">
+            </div>
+            <div class="acb-text">
+              <h4>Admissions Office Is Open Today</h4>
+              <p>Advisors are currently on campus. Mon – Fri: 8:00 AM – 6:00 PM PST &bull; Sat: 9:00 AM – 3:00 PM</p>
+            </div>
+          </div>
+          <div class="acb-actions">
+            <a href="tel:8001234567" class="btn btn-brand btn-sm"><i class="bi bi-telephone-fill me-1"></i> (800) 123-4567</a>
+            <a href="#section-enquiry-form" class="btn btn-soft btn-sm"><i class="bi bi-calendar-check me-1"></i> Book a Tour</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INTERACTIVE ENQUIRY FORM -->
+    <section class="content-section section-bg-soft" id="section-enquiry-form">
+      <div class="container-narrow">
+        <div class="section-head center">
+          <span class="eyebrow">Online Application</span>
+          <h2 class="section-title">Send Us a Message</h2>
+          <p class="section-subtitle">Fill out the form below. An admissions advisor will follow up with syllabus information within 24 business hours.</p>
+        </div>
+
+        <div class="card-beauty" style="padding: 40px; box-shadow: var(--shadow-md);">
+          <!-- Front-End Success Feedback Alert -->
+          <div class="form-feedback-alert alert-success" id="form-success-alert" role="alert">
+            <strong>Thank you!</strong> Your admissions enquiry has been received. An advisor will contact you shortly with program details.
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="card-grid-2" style="gap: 18px; margin-bottom: 0;">
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                <div class="invalid-feedback">Please enter your full name (at least 2 letters).</div>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. sarah@example.com" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+            </div>
+
+            <div class="card-grid-2" style="gap: 18px; margin-bottom: 0;">
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="contact-phone" class="form-label">Phone Number *</label>
+                <input type="tel" id="contact-phone" class="form-input" placeholder="e.g. (555) 123-4567" required>
+                <div class="invalid-feedback">Please provide a valid contact phone number.</div>
+              </div>
+
+              <!-- Program of Interest -->
+              <div class="form-group">
+                <label for="contact-program" class="form-label">Program of Interest *</label>
+                <select id="contact-program" class="form-select" required>
+                  <option value="">Select a program...</option>
+                  <option value="cosmetology">Cosmetology Master Program (1,500 Hours)</option>
+                  <option value="esthetics">Esthetics &amp; Skincare Track (600 Hours)</option>
+                  <option value="nails">Nail Technology Specialist (400 Hours)</option>
+                  <option value="makeup">Makeup Artistry &amp; Hair Design (300 Hours)</option>
+                </select>
+                <div class="invalid-feedback">Please choose your intended area of study.</div>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message / Questions *</label>
+              <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Tell us about your background or ask any questions about course schedules or tours..." required></textarea>
+              <div class="invalid-feedback">Please enter a brief message (at least 10 characters).</div>
+            </div>
+
+            <button type="submit" class="btn btn-brand btn-lg btn-full" id="submit-contact-btn">Submit Admissions Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CAMPUS LOCATION & SPLIT MAP (Editorial Split Showcase) -->
+    <section class="content-section section-bg-white" id="section-campus-map">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Visit Our Campus</span>
+          <h2 class="section-title">Campus Location &amp; Directions</h2>
+          <p class="section-subtitle">Located conveniently in the Riverside arts and commercial district with complimentary student parking.</p>
+        </div>
+
+        <div class="split-story-grid">
+          <!-- Campus Details Card -->
+          <div>
+            <h3 class="section-title" style="font-size: 1.6rem; margin-bottom: 12px;">BeautyPro Academy Campus</h3>
+            <p>Our modern 15,000 sq. ft. academy is situated near public transit hubs, cafe districts, and professional salon studios. Visitors receive designated parking passes upon arrival at the security gate.</p>
+            <div style="display: flex; flex-direction: column; gap: 14px; margin: 24px 0;">
+              <div style="display: flex; gap: 12px; font-size: 0.95rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D94378" stroke-width="2.5" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Free dedicated covered parking for students &amp; visitors</span>
+              </div>
+              <div style="display: flex; gap: 12px; font-size: 0.95rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D94378" stroke-width="2.5" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Wheelchair accessible entrances and clinical suites</span>
+              </div>
+              <div style="display: flex; gap: 12px; font-size: 0.95rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D94378" stroke-width="2.5" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>5 minutes from Riverside Downtown Commuter Station</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline-navy">Open in Google Maps &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Interactive Map / Campus Image -->
+          <div class="about-single-img">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105943.51356763445!2d-117.4727181048842!3d33.95335478440316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dca63892040b2f%3A0x6b2e1f2b43b3bdf4!2sRiverside%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="380" 
+              style="border:0; border-radius: var(--radius-xl);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="BeautyPro Campus Location Map">
+            </iframe>
+            <div class="floating-media-badge">
+              <span class="badge-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+              <div>
+                <strong>Riverside, CA Campus</strong>
+                <span>128 Beauty Academy Way, Suite 400</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FREQUENTLY ASKED QUESTIONS (Accordion) -->
+    <section class="content-section section-bg-soft" id="section-faq">
+      <div class="container-narrow">
+        <div class="section-head center">
+          <span class="eyebrow">Common Questions</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Find quick answers regarding requirements, schedules, tuition, and licensing examinations.</p>
+        </div>
+
+        <div class="accordion" id="faq-accordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item is-open">
+            <button class="accordion-header" aria-expanded="true">
+              <span>What are the minimum enrollment requirements?</span>
+              <span class="accordion-icon">&darr;</span>
+            </button>
+            <div class="accordion-body">
+              Applicants must be at least 17 years old and provide proof of high school diploma or equivalent (GED). No previous salon or beauty training is required; we teach all technical skills from the ground up.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Are student toolkits included in the tuition?</span>
+              <span class="accordion-icon">&darr;</span>
+            </button>
+            <div class="accordion-body">
+              Yes! Every enrolled student receives a brand new, industry-standard professional kit with shears, wands, styling combs, cosmetics palettes, and mannequins that remain yours after graduation.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Can I work a job while attending BeautyPro?</span>
+              <span class="accordion-icon">&darr;</span>
+            </button>
+            <div class="accordion-body">
+              Absolutely. We provide both accelerated full-time day schedules (Monday through Friday, 9am - 5pm) and evening part-time tracks (Monday through Thursday, 5:30pm - 9:30pm) to accommodate working adults.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How do you help students pass the State Board exam?</span>
+              <span class="accordion-icon">&darr;</span>
+            </button>
+            <div class="accordion-body">
+              Our curriculum features weekly mock practical and written exams simulating exact State Board testing conditions. Students also gain access to our digital study portal with flashcards and practice test questions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: FINAL ADMISSIONS CTA (LittleBloom Offer Banner Style) -->
+    <section class="content-section section-bg-white pre-footer-cta-section" id="section-contact-cta">
+      <div class="container">
+        <div class="offer-banner">
+          <div class="ob-inner">
+            <div>
+              <span class="ob-tag">In-Person Discovery</span>
+              <h2>Prefer to Chat with an Advisor in Person?</h2>
+              <p>Walk-in tours are welcome Tuesday through Thursday from 10:00 AM to 4:00 PM, or contact an advisor to book a dedicated one-on-one session.</p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="tel:8001234567" class="btn btn-light btn-lg"><i class="bi bi-telephone me-2"></i>Call (800) 123-4567</a>
+                <a href="dashboard.html" class="btn btn-outline-light btn-lg"><i class="bi bi-speedometer2 me-2"></i>Access Student Portal</a>
+              </div>
+            </div>
+            <div class="discount-stamp">
+              <strong>FREE</strong>
+              <span>CAMPUS TOUR<br>&amp; ADVISING</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <img src="assets/images/logo_dark.png" alt="BeautyPro Beauty Academy" class="brand-logo-img" width="165" height="46">
+          </div>
+          <p class="footer-desc">A premier career-focused cosmetology and beauty academy dedicated to hands-on excellence, state board licensing, and modern salon industry leadership.</p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"></line><path d="M8 8a4 4 0 0 1 8 0c0 3-2 5-4 5s-2 2-2 3"></path></svg>
+            </a>
+          </div>
+          <div>
+            <a href="login.html" class="btn btn-sm btn-outline-white">Student Login</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul class="footer-links">
+            <li><a href="programs.html" class="footer-link">&rsaquo; Cosmetology (1,500 hrs)</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Esthetics &amp; Skincare</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Nail Technology</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Makeup Artistry</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Hair Design Specialization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">&rsaquo; Home 1 (Outcomes)</a></li>
+            <li><a href="home-2.html" class="footer-link">&rsaquo; Home 2 (Editorial)</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Programs</a></li>
+            <li><a href="instructors.html" class="footer-link">&rsaquo; Our Instructors</a></li>
+            <li><a href="about.html" class="footer-link">&rsaquo; About the Academy</a></li>
+            <li><a href="contact.html" class="footer-link">&rsaquo; Contact &amp; Campus Tour</a></li>
+            <li><a href="dashboard.html" class="footer-link">&rsaquo; Student Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Campus Info</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>128 Beauty Academy Way, Suite 400<br>Riverside, CA 92501</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:8001234567" style="color: inherit; text-decoration: none;">(800) 123-4567</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM<br>Sat: 9:00 AM &ndash; 3:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 BeautyPro Cosmetology &amp; Beauty School. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+</html>

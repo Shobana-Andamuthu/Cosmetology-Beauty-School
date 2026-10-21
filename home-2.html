@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeautyPro — Editorial Split | Cosmetology &amp; Beauty Academy</title>
+  <meta name="description" content="Explore BeautyPro's innovative editorial training layout. Flexible scheduling, master instructors, state-of-the-art facilities, and state board licensing preparation.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Attractive Luxury Preloader -->
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo-ring">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="loader-logo-img">
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <span class="loader-text">BEAUTY ACADEMY</span>
+    </div>
+  </div>
+
+
+  <!-- Shared Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brand-logo" aria-label="BeautyPro Home">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-light" width="165" height="46">
+        <img src="assets/images/logo_dark.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-dark" width="165" height="46">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Desktop Navigation">
+        <ul class="desktop-nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle active" aria-expanded="false" id="home-dropdown-btn">
+              Home
+              <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu" aria-labelledby="home-dropdown-btn">
+              <a href="index.html" class="nav-dropdown-item">Home 1 — Graduate Success</a>
+              <a href="home-2.html" class="nav-dropdown-item active">Home 2 — Editorial Split</a>
+            </div>
+          </li>
+          <li><a href="programs.html" class="nav-link">Programs</a></li>
+          <li><a href="instructors.html" class="nav-link">Instructors</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+
+        <!-- Unified Desktop Actions Group (Equal 12px Spacing Between All Buttons) -->
+        <div class="nav-actions-group">
+          <button class="icon-toggle-btn rtl-toggle" aria-label="Switch text direction (LTR / RTL)" title="Toggle RTL / LTR text direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 8h13M13 4l4 4-4 4M21 16H8M11 20l-4-4 4-4"/>
+            </svg>
+          </button>
+
+          <button class="icon-toggle-btn theme-toggle" aria-label="Toggle light / dark mode" title="Toggle Light / Dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a href="login.html" class="btn-nav-secondary">Login</a>
+          <a href="contact.html#section-enquiry-form" class="btn-nav-primary">Apply Now</a>
+        </div>
+      </nav>
+
+      <!-- Mobile & Tablet Header Controls -->
+      <div class="header-actions-mobile">
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile & iPad Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-light" width="150" height="42">
+        <img src="assets/images/logo_dark.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-dark" width="150" height="42">
+      </div>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li>
+        <div class="mobile-dropdown-header" id="mobile-home-toggle">
+          <span>Home Pages</span>
+          <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+        <div class="mobile-sublinks">
+          <a href="index.html" class="mobile-sublink">Home 1 (Graduate Success)</a>
+          <a href="home-2.html" class="mobile-sublink active">Home 2 (Editorial Split)</a>
+        </div>
+      </li>
+      <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
+      <li><a href="instructors.html" class="mobile-nav-link">Instructors</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      <li><a href="dashboard.html" class="mobile-nav-link">Dashboard</a></li>
+    </ul>
+
+    <div class="mobile-nav-toggles">
+      <button class="mobile-toggle-btn rtl-toggle" aria-label="Switch text direction">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+          <path d="M3 8h13M13 4l4 4-4 4M21 16H8M11 20l-4-4 4-4"/>
+        </svg>
+        <span>RTL / LTR</span>
+      </button>
+      <button class="mobile-toggle-btn theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <span>Theme</span>
+      </button>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="login.html" class="btn btn-secondary btn-full">Login</a>
+      <a href="contact.html#section-enquiry-form" class="btn btn-primary btn-full">Apply Now</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- SECTION 1: HERO (Full-Screen Salon Background with Centered Content) -->
+    <section class="h2-hero-centered" id="section-home2-hero">
+      <div class="h2-hero-overlay"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="h2-hero-centered-content">
+          <span class="eyebrow eyebrow-glass">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            ACCREDITED BEAUTY ACADEMY &bull; FALL / WINTER '26 LOOKBOOK
+          </span>
+          <h1 class="h2-hero-title">
+            Master The Art of <span class="accent-white">Modern Beauty</span>
+          </h1>
+          <p class="h2-hero-lead">
+            From precision scissor geometry and clinical dermatology to backstage editorial glam — develop the career-ready mastery top salons and MedSpas demand.
+          </p>
+          <div class="hero-buttons-row justify-content-center">
+            <a href="programs.html" class="btn btn-brand btn-lg" id="home2-hero-btn">
+              <span>Explore Programs</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg" id="home2-visit-btn">Book Academy Tour</a>
+          </div>
+
+          <!-- Centered Stats Glass Bar -->
+          <div class="h2-hero-stats">
+            <div class="counter-box">
+              <div class="counter text-white">1,500+</div>
+              <div class="counter-label text-white-muted">Clinical Hours</div>
+            </div>
+            <div class="counter-box">
+              <div class="counter text-white">98%</div>
+              <div class="counter-label text-white-muted">Licensure Pass Rate</div>
+            </div>
+            <div class="counter-box">
+              <div class="counter text-white">12:1</div>
+              <div class="counter-label text-white-muted">Student-to-Teacher</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CAREER PATHWAYS BY LEVEL (5 Vertical Cards across 1 Row on Desktop) -->
+    <section class="content-section section-bg-soft" id="section-home2-levels">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">PROGRESSIVE MILESTONES</span>
+          <h2 class="section-title">Pathways by Training Level</h2>
+          <p class="section-subtitle">Every stage in your training unlocks client floor credentials and specialized licensing skills.</p>
+          <div class="divider-brand"></div>
+        </div>
+
+        <div class="grid-5-col">
+          <!-- Level 01 -->
+          <a href="programs.html" class="h2-age" id="level-01">
+            <img src="assets/images/pathway_hair_sculpting.png" alt="Foundation Level hair cutting training" width="300" height="420" loading="lazy">
+            <span class="h2-age-num">01</span>
+            <span class="h2-age-overlay">
+              <span class="h2-age-count">Level 1: Foundation</span>
+              <span class="h2-age-title">Hair Sculpting</span>
+              <span class="h2-age-range">Scissor geometry &amp; thermal styling</span>
+            </span>
+          </a>
+
+          <!-- Level 02 -->
+          <a href="programs.html" class="h2-age" id="level-02">
+            <img src="assets/images/pathway_colorist.png" alt="Color formulation and chemical texture training" width="300" height="420" loading="lazy">
+            <span class="h2-age-num">02</span>
+            <span class="h2-age-overlay">
+              <span class="h2-age-count">Level 2: Chemistry</span>
+              <span class="h2-age-title">Colorist Mastery</span>
+              <span class="h2-age-range">Balayage &amp; foil placement</span>
+            </span>
+          </a>
+
+          <!-- Level 03 -->
+          <a href="programs.html" class="h2-age" id="level-03">
+            <img src="assets/images/pathway_medical_esthetics.png" alt="Clinical Esthetics dermatology practice" width="300" height="420" loading="lazy">
+            <span class="h2-age-num">03</span>
+            <span class="h2-age-overlay">
+              <span class="h2-age-count">Level 3: Clinical</span>
+              <span class="h2-age-title">Medical Esthetics</span>
+              <span class="h2-age-range">Chemical peels &amp; LED therapy</span>
+            </span>
+          </a>
+
+          <!-- Level 04 -->
+          <a href="programs.html" class="h2-age" id="level-04">
+            <img src="assets/images/pathway_nail_artisan.png" alt="Nail technology sculptured acrylics and gels" width="300" height="420" loading="lazy">
+            <span class="h2-age-num">04</span>
+            <span class="h2-age-overlay">
+              <span class="h2-age-count">Level 4: Artisan</span>
+              <span class="h2-age-title">Gel Sculpting</span>
+              <span class="h2-age-range">Nail extensions &amp; spa care</span>
+            </span>
+          </a>
+
+          <!-- Level 05 -->
+          <a href="programs.html" class="h2-age" id="level-05">
+            <img src="assets/images/pathway_bridal_makeup.png" alt="Editorial bridal and runway makeup application" width="300" height="420" loading="lazy">
+            <span class="h2-age-num">05</span>
+            <span class="h2-age-overlay">
+              <span class="h2-age-count">Level 5: Editorial</span>
+              <span class="h2-age-title">Runway &amp; Bridal</span>
+              <span class="h2-age-range">Airbrushing &amp; couture looks</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FEATURED DISCIPLINES BENTO GRID (Image 4: 2 Top + 3 Bottom) -->
+    <section class="content-section section-bg-white" id="section-home2-bento">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">CURATED SPECIALTIES</span>
+          <h2 class="section-title">Featured Clinical Disciplines</h2>
+          <p class="section-subtitle">Five hand-crafted learning tracks, each built around high-revenue beauty services and client retention.</p>
+          <div class="divider-brand"></div>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Top Row: 2 Large Cards (col-lg-6) -->
+          <div class="bento-row-top">
+            <a href="programs.html" class="h2-cb h2-cb-lg" id="bento-cosmetology">
+              <img src="assets/images/bento_hair_track.jpg" alt="Everyday hair essentials and styling" width="600" height="380" loading="lazy">
+              <span class="h2-cb-overlay">
+                <span class="h2-cb-tag">CORE DISCIPLINE</span>
+                <h3>Cosmetology Master Track</h3>
+                <p>Master precision scissor geometry, balayage formulations, thermal silk presses, and salon guest retention strategies.</p>
+                <span class="btn-cb">Explore Track &rarr;</span>
+              </span>
+            </a>
+
+            <a href="programs.html" class="h2-cb h2-cb-lg" id="bento-esthetics">
+              <img src="assets/images/bento_skin_track.jpg" alt="Clinical facial skincare treatment" width="600" height="380" loading="lazy">
+              <span class="h2-cb-overlay">
+                <span class="h2-cb-tag">CLINICAL MEDSPA</span>
+                <h3>Advanced Esthetics &amp; Skin</h3>
+                <p>European spa facials, medical extractions, ultrasonic exfoliation, and advanced MedSpa sanitation standards.</p>
+                <span class="btn-cb">Explore Track &rarr;</span>
+              </span>
+            </a>
+          </div>
+
+          <!-- Bottom Row: 3 Cards (col-md-4) -->
+          <div class="bento-row-bottom">
+            <a href="programs.html" class="h2-cb h2-cb-sm" id="bento-nails">
+              <img src="assets/images/bento_nails_track.jpg" alt="Nail technology extensions and gel art" width="400" height="300" loading="lazy">
+              <span class="h2-cb-overlay">
+                <span class="h2-cb-tag">SPA SPECIALIST</span>
+                <h3>Nail Technology</h3>
+                <span class="btn-cb">Explore Track &rarr;</span>
+              </span>
+            </a>
+
+            <a href="programs.html" class="h2-cb h2-cb-sm" id="bento-makeup">
+              <img src="assets/images/bento_bridal_track.jpg" alt="Editorial runway and bridal makeup application" width="400" height="300" loading="lazy">
+              <span class="h2-cb-overlay">
+                <span class="h2-cb-tag">CELEBRATION</span>
+                <h3>Bridal Artistry</h3>
+                <span class="btn-cb">Explore Track &rarr;</span>
+              </span>
+            </a>
+
+            <a href="programs.html" class="h2-cb h2-cb-sm" id="bento-salon">
+              <img src="assets/images/bento_salon_clinic.jpg" alt="Modern student salon floor and styling stations" width="400" height="300" loading="lazy">
+              <span class="h2-cb-overlay">
+                <span class="h2-cb-tag">ENTREPRENEUR</span>
+                <h3>Salon Floor Clinic</h3>
+                <span class="btn-cb">Explore Track &rarr;</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SPECIALTY FOCUS SETS (Image 5: 4 Cards in 1 Row on Desktop) -->
+    <section class="content-section section-bg-soft" id="section-home2-sets">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">COMPREHENSIVE BUNDLES</span>
+          <h2 class="section-title">Specialty Focus Sets</h2>
+          <p class="section-subtitle">Coordinated dual-specialization tracks for graduates wanting maximum market flexibility and higher service tickets.</p>
+          <div class="divider-brand"></div>
+        </div>
+
+        <div class="grid-4-col">
+          <!-- Card 1: Dual License -->
+          <div class="match-card" id="set-dual">
+            <div class="match-media">
+              <img src="assets/images/track_dual_license.jpg" alt="Dual license cosmetology and esthetics student" width="300" height="225" loading="lazy">
+              <span class="match-tag">DUAL LICENSE</span>
+            </div>
+            <div class="match-body">
+              <h4>Cosmetology + Esthetics</h4>
+              <p>Complete both licenses to offer full hair styling and clinical skin treatments from day one.</p>
+              <a href="programs.html" class="btn btn-outline-brand">Explore Track</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Bridal Suite -->
+          <div class="match-card" id="set-bridal">
+            <div class="match-media">
+              <img src="assets/images/track_bridal_glam.jpg" alt="Bridal makeup and special occasion set" width="300" height="225" loading="lazy">
+              <span class="match-tag">BRIDAL GLAM</span>
+            </div>
+            <div class="match-body">
+              <h4>Bridal &amp; Event Suite</h4>
+              <p>Master high-end bridal upstyles, airbrush cosmetics, and on-location wedding packages.</p>
+              <a href="programs.html" class="btn btn-outline-brand">Explore Track</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Medical Spa (Featured Card) -->
+          <div class="match-card featured-card" id="set-medspa">
+            <div class="match-media">
+              <img src="assets/images/track_medspa_specialist.jpg" alt="Medical spa clinical skincare facial set" width="300" height="225" loading="lazy">
+              <span class="match-tag">CLINICAL SPA</span>
+            </div>
+            <div class="match-body">
+              <h4>Clinical MedSpa Specialist</h4>
+              <p>High-frequency therapies, chemical peel formulations, and medical spa safety protocols.</p>
+              <a href="programs.html" class="btn btn-brand">Explore Track</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Salon Owner -->
+          <div class="match-card" id="set-owner">
+            <div class="match-media">
+              <img src="assets/images/track_salon_owner.jpg" alt="Salon owner suite management and entrepreneurship" width="300" height="225" loading="lazy">
+              <span class="match-tag">STUDIO OWNER</span>
+            </div>
+            <div class="match-body">
+              <h4>Salon Suite Entrepreneur</h4>
+              <p>Booth rental laws, retail product margins, client retention, and salon suite launch.</p>
+              <a href="programs.html" class="btn btn-outline-brand">Explore Track</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FAST-TRACK ADMISSIONS & SYLLABUS INQUIRY FORM -->
+    <section class="content-section section-bg-soft" id="section-home2-inquiry">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAST-TRACK ADMISSIONS</span>
+          <h2 class="section-title">Request Syllabus &amp; Campus Tour</h2>
+          <p class="section-subtitle">Tell us what track you're interested in — our admissions team replies within one business day with a customized syllabus and tuition guide.</p>
+          <div class="divider-brand"></div>
+        </div>
+
+        <div style="max-width: 820px; margin: 0 auto;">
+          <div class="card-beauty" style="padding: 40px 36px; border-radius: 24px; box-shadow: var(--shadow-md);">
+            <form id="home2-inquiry-form" onsubmit="event.preventDefault(); alert('Thank you! Our admissions coordinator will contact you shortly with your syllabus and schedule options.');">
+              <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+                  <div class="form-group">
+                    <label class="form-label" for="inq-name" style="font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; display: block;">Full Name</label>
+                    <input type="text" class="form-control" id="inq-name" placeholder="e.g. Maya Chen" required style="width: 100%; padding: 12px 16px; border-radius: 12px; border: 1.5px solid var(--border-subtle); background: var(--input-bg); color: var(--heading-text);">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="inq-email" style="font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; display: block;">Email Address</label>
+                    <input type="email" class="form-control" id="inq-email" placeholder="maya@example.com" required style="width: 100%; padding: 12px 16px; border-radius: 12px; border: 1.5px solid var(--border-subtle); background: var(--input-bg); color: var(--heading-text);">
+                  </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+                  <div class="form-group">
+                    <label class="form-label" for="inq-phone" style="font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; display: block;">Phone Number</label>
+                    <input type="tel" class="form-control" id="inq-phone" placeholder="(555) 000-0000" required style="width: 100%; padding: 12px 16px; border-radius: 12px; border: 1.5px solid var(--border-subtle); background: var(--input-bg); color: var(--heading-text);">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="inq-program" style="font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; display: block;">Program Track</label>
+                    <select class="form-control" id="inq-program" required style="width: 100%; padding: 12px 16px; border-radius: 12px; border: 1.5px solid var(--border-subtle); background: var(--input-bg); color: var(--heading-text);">
+                      <option value="">Select a Program Track...</option>
+                      <option value="cosmetology">Cosmetology Master (1,500 Hours)</option>
+                      <option value="esthetics">Clinical Esthetics &amp; Skincare (600 Hours)</option>
+                      <option value="nails">Nail Technology Specialist (400 Hours)</option>
+                      <option value="makeup">Makeup Artistry &amp; Hair Design (300 Hours)</option>
+                      <option value="dual">Dual License (Cosmetology + Esthetics)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+                  <div class="form-group">
+                    <label class="form-label" for="inq-shift" style="font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; display: block;">Preferred Schedule</label>
+                    <select class="form-control" id="inq-shift" style="width: 100%; padding: 12px 16px; border-radius: 12px; border: 1.5px solid var(--border-subtle); background: var(--input-bg); color: var(--heading-text);">
+                      <option value="day">Full-Time Day (Mon - Fri, 9 AM - 4 PM)</option>
+                      <option value="evening">Evening Part-Time (Mon - Thu, 5 PM - 9:30 PM)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="inq-start" style="font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; display: block;">Target Start Term</label>
+                    <select class="form-control" id="inq-start" style="width: 100%; padding: 12px 16px; border-radius: 12px; border: 1.5px solid var(--border-subtle); background: var(--input-bg); color: var(--heading-text);">
+                      <option value="fall2026">Fall Cohort (Enrolling Now)</option>
+                      <option value="winter2026">Winter Cohort</option>
+                      <option value="spring2027">Spring Cohort</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="inq-notes" style="font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; display: block;">Questions or Special Interests <span style="font-weight: normal; color: var(--muted-text);">(Optional)</span></label>
+                  <textarea class="form-control" id="inq-notes" rows="3" placeholder="Tell us about your career goals, previous beauty experience, or questions about financial aid..." style="width: 100%; padding: 12px 16px; border-radius: 12px; border: 1.5px solid var(--border-subtle); background: var(--input-bg); color: var(--heading-text);"></textarea>
+                </div>
+
+                <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-top: 10px;">
+                  <button type="submit" class="btn btn-brand btn-lg" id="submit-inquiry-btn">Submit Admissions Enquiry &rarr;</button>
+                  <a href="tel:8001234567" class="btn btn-soft btn-lg">Call Admissions Hotline</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- SECTION 6: SALON & MEDSPA PARTNERSHIP BANNER (Above Footer) -->
+    <section class="content-section section-bg-white pre-footer-cta-section" id="section-home2-partners">
+      <div class="container">
+        <div class="offer-banner">
+          <div class="ob-inner">
+            <div>
+              <span class="ob-tag">INDUSTRY PLACEMENT NETWORK</span>
+              <h2>Guaranteed Interviews at 50+ Salons &amp; Spas</h2>
+              <p>Our premier hiring network recruits directly from our graduation showcases. Connect with luxury salons, hotel resort spas, and clinical MedSpas nationwide.</p>
+              <div style="display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap;">
+                <a href="contact.html" class="btn btn-brand btn-lg" id="home2-hire-btn">Connect With Employers &rarr;</a>
+                <a href="about.html" class="btn btn-soft btn-lg">View Hiring Partners</a>
+              </div>
+            </div>
+            <div class="discount-stamp">
+              <strong>50+</strong>
+              <span>SALONS TRUST<br>OUR GRADS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <img src="assets/images/logo_dark.png" alt="BeautyPro Beauty Academy" class="brand-logo-img" width="165" height="46">
+          </div>
+          <p class="footer-desc">A premier career-focused cosmetology and beauty academy dedicated to hands-on excellence, state board licensing, and modern salon industry leadership.</p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"></line><path d="M8 8a4 4 0 0 1 8 0c0 3-2 5-4 5s-2 2-2 3"></path></svg>
+            </a>
+          </div>
+          <div>
+            <a href="login.html" class="btn btn-sm btn-outline-white">Student Login</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul class="footer-links">
+            <li><a href="programs.html" class="footer-link">&rsaquo; Cosmetology (1,500 hrs)</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Esthetics &amp; Skincare</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Nail Technology</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Makeup Artistry</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Hair Design Specialization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">&rsaquo; Home 1 (Outcomes)</a></li>
+            <li><a href="home-2.html" class="footer-link">&rsaquo; Home 2 (Editorial)</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Programs</a></li>
+            <li><a href="instructors.html" class="footer-link">&rsaquo; Our Instructors</a></li>
+            <li><a href="about.html" class="footer-link">&rsaquo; About the Academy</a></li>
+            <li><a href="contact.html" class="footer-link">&rsaquo; Contact &amp; Campus Tour</a></li>
+            <li><a href="dashboard.html" class="footer-link">&rsaquo; Student Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Campus Info</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>128 Beauty Academy Way, Suite 400<br>Riverside, CA 92501</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:8001234567" style="color: inherit; text-decoration: none;">(800) 123-4567</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM<br>Sat: 9:00 AM &ndash; 3:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 BeautyPro Cosmetology &amp; Beauty School. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+</html>

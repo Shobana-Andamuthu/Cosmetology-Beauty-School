@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | BeautyPro Cosmetology &amp; Beauty School</title>
+  <meta name="description" content="Learn about BeautyPro Academy's story, mission, modern campus facilities, and dedication to excellence in beauty education.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Attractive Luxury Preloader -->
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo-ring">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="loader-logo-img">
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <span class="loader-text">BEAUTY ACADEMY</span>
+    </div>
+  </div>
+
+
+  <!-- Shared Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brand-logo" aria-label="BeautyPro Home">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-light" width="165" height="46">
+        <img src="assets/images/logo_dark.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-dark" width="165" height="46">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Desktop Navigation">
+        <ul class="desktop-nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle" aria-expanded="false" id="home-dropdown-btn">
+              Home
+              <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu" aria-labelledby="home-dropdown-btn">
+              <a href="index.html" class="nav-dropdown-item">Home 1 — Graduate Success</a>
+              <a href="home-2.html" class="nav-dropdown-item">Home 2 — Editorial Split</a>
+            </div>
+          </li>
+          <li><a href="programs.html" class="nav-link">Programs</a></li>
+          <li><a href="instructors.html" class="nav-link">Instructors</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+
+        <!-- Unified Desktop Actions Group (Equal 12px Spacing Between All Buttons) -->
+        <div class="nav-actions-group">
+          <button class="icon-toggle-btn rtl-toggle" aria-label="Switch text direction (LTR / RTL)" title="Toggle RTL / LTR text direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 8h13M13 4l4 4-4 4M21 16H8M11 20l-4-4 4-4"/>
+            </svg>
+          </button>
+
+          <button class="icon-toggle-btn theme-toggle" aria-label="Toggle light / dark mode" title="Toggle Light / Dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a href="login.html" class="btn-nav-secondary">Login</a>
+          <a href="contact.html#section-enquiry-form" class="btn-nav-primary">Apply Now</a>
+        </div>
+      </nav>
+
+      <!-- Mobile & Tablet Header Controls -->
+      <div class="header-actions-mobile">
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-light" width="150" height="42">
+        <img src="assets/images/logo_dark.png" alt="BeautyPro Beauty Academy" class="brand-logo-img logo-dark" width="150" height="42">
+      </div>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li>
+        <div class="mobile-dropdown-header" id="mobile-home-toggle">
+          <span>Home Pages</span>
+          <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+        <div class="mobile-sublinks">
+          <a href="index.html" class="mobile-sublink">Home 1 (Graduate Success)</a>
+          <a href="home-2.html" class="mobile-sublink">Home 2 (Editorial Split)</a>
+        </div>
+      </li>
+      <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
+      <li><a href="instructors.html" class="mobile-nav-link">Instructors</a></li>
+      <li><a href="about.html" class="mobile-nav-link active">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      <li><a href="dashboard.html" class="mobile-nav-link">Dashboard</a></li>
+    </ul>
+
+    <div class="mobile-nav-toggles">
+      <button class="mobile-toggle-btn rtl-toggle" aria-label="Switch text direction">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+          <path d="M3 8h13M13 4l4 4-4 4M21 16H8M11 20l-4-4 4-4"/>
+        </svg>
+        <span>RTL / LTR</span>
+      </button>
+      <button class="mobile-toggle-btn theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <span>Theme</span>
+      </button>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="login.html" class="btn btn-secondary btn-full">Login</a>
+      <a href="contact.html#section-enquiry-form" class="btn btn-primary btn-full">Apply Now</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- SECTION 1: HERO BANNER (LittleBloom Animated Banner with Breadcrumbs) -->
+    <section class="page-banner" id="about-hero">
+      <div class="animated-bg" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+      </div>
+      <div class="container position-relative">
+        <span class="hero-badge"><i class="bi bi-flower1"></i> Our Heritage &amp; Mission</span>
+        <h1 class="mt-3">About BeautyPro Academy</h1>
+        <p>Building skilled professionals and inspiring lifelong careers through accredited cosmetology, clinical esthetics, and salon leadership education.</p>
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <span>About Academy</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE BEAUTYPRO STORY (LittleBloom Split Photo + Stat Counters) -->
+    <section class="content-section section-bg-white" id="section-story">
+      <div class="container">
+        <div class="split-story-grid">
+          <!-- Left: Single Framed Photo with Floating Media Badge -->
+          <div class="about-single-img">
+            <img src="assets/images/about_campus_building.jpg" alt="Modern BeautyPro Academy exterior campus in Riverside" width="580" height="460" loading="lazy">
+            <div class="floating-media-badge">
+              <span class="badge-icon">★</span>
+              <div>
+                <strong>Top-Rated Academy</strong>
+                <span>Over 14 Years of Excellence</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Story Narrative + Stat Boxes -->
+          <div>
+            <span class="eyebrow">Our Origin Story</span>
+            <h2 class="section-title">Pioneering Career-First Beauty Training</h2>
+            <p>Founded in 2012, BeautyPro began with a clear purpose: to bridge the gap between traditional trade school requirements and the high-energy reality of modern metropolitan salons and medical spas.</p>
+            <p>Our 15,000 sq. ft. flagship campus features Italian hydraulic styling stations, private clinical treatment suites, and a dedicated digital portfolio photography studio — ensuring you build clinical confidence before graduation.</p>
+
+            <!-- 3 Stat Counter Boxes (LittleBloom Style) -->
+            <div class="stat-row">
+              <div class="stat-box">
+                <div class="stat-num">5k+</div>
+                <div class="stat-label">Graduates</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">98%</div>
+                <div class="stat-label">Board Pass Rate</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Placement Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: OUR GUIDING PROMISES (Luxury 4-Pillar Showcase - Unique Layout) -->
+    <section class="content-section section-bg-soft" id="section-values">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow"><i class="bi bi-patch-check me-1"></i> What We Stand For</span>
+          <h2 class="section-title">Our Guiding Promises</h2>
+          <p class="section-subtitle">Four non-negotiable educational pillars backing every hour of student instruction and licensing preparation.</p>
+        </div>
+
+        <div class="promises-showcase-grid">
+          <!-- Pillar 1 -->
+          <article class="promise-pillar-card">
+            <div class="promise-pillar-header">
+              <span class="promise-pillar-icon" aria-hidden="true">✦</span>
+              <span class="promise-pillar-code">PILLAR 01</span>
+            </div>
+            <h3>Excellence in Education</h3>
+            <p>Curriculums continuously updated against state board requirements, precision shears technique, and editorial fashion trends.</p>
+            <div class="promise-pillar-guarantee">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>98% First-Time Pass Rate</span>
+            </div>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="promise-pillar-card">
+            <div class="promise-pillar-header">
+              <span class="promise-pillar-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 18 3 22 9 12 22 2 9 6 3"></polygon></svg></span>
+              <span class="promise-pillar-code">PILLAR 02</span>
+            </div>
+            <h3>Student-First Success</h3>
+            <p>Lifelong career mentorship, portfolio shoot styling, 1-on-1 practical mock exams, and top-tier metropolitan salon placement.</p>
+            <div class="promise-pillar-guarantee">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>100% Placement Support</span>
+            </div>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="promise-pillar-card">
+            <div class="promise-pillar-header">
+              <span class="promise-pillar-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
+              <span class="promise-pillar-code">PILLAR 03</span>
+            </div>
+            <h3>Clinical Integrity &amp; Safety</h3>
+            <p>Hospital-grade autoclave sterilization, EPA germicidal protocols, and dermatological consultation methods taught on day one.</p>
+            <div class="promise-pillar-guarantee">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Medical-Grade Standards</span>
+            </div>
+          </article>
+
+          <!-- Pillar 4 -->
+          <article class="promise-pillar-card">
+            <div class="promise-pillar-header">
+              <span class="promise-pillar-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"></path><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.8-2.8L15 14"></path><path d="m14 13-1.5-1.5a2 2 0 0 0-2.8 0L8 13"></path></svg></span>
+              <span class="promise-pillar-code">PILLAR 04</span>
+            </div>
+            <h3>Transparent Tuition</h3>
+            <p>All professional shears, mannequins, textbooks, Milady digital access, and state exam kits included without surprise add-on fees.</p>
+            <div class="promise-pillar-guarantee">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Complete Pro Kit Included</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ACADEMY MILESTONES (LittleBloom Timeline) -->
+    <section class="content-section section-bg-white" id="section-timeline">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">The Journey</span>
+          <h2 class="section-title">How BeautyPro Bloomed</h2>
+          <p class="section-subtitle">A decade of educational innovation and graduate achievements in professional beauty.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Milestone 1 -->
+          <div class="timeline-item">
+            <div class="tl-year">2012</div>
+            <div class="timeline-item-body">
+              <h3>The First Styling Studio</h3>
+              <p>BeautyPro launched with 10 styling stations and a passionate mission to elevate cosmetology training into a respected creative profession.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-item">
+            <div class="tl-year">2016</div>
+            <div class="timeline-item-body">
+              <h3>State Board Accreditation &amp; Expansion</h3>
+              <p>Earned full California State Board licensing accreditation and achieved a 98% first-time examination pass rate across all graduating cohorts.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-item">
+            <div class="tl-year">2021</div>
+            <div class="timeline-item-body">
+              <h3>Clinical Esthetics &amp; MedSpa Suites</h3>
+              <p>Added 6 private medical-grade skincare suites, high-frequency equipment, and European facial apparatus to serve expanding wellness industries.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div class="timeline-item">
+            <div class="tl-year">2026</div>
+            <div class="timeline-item-body">
+              <h3>Digital Student Dashboard &amp; 5,000 Alumni</h3>
+              <p>Over 5,000 successful alumni now lead salons, spas, and bridal agencies globally, supported by our interactive hours and exam tracker portal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: DESIGNED FOR REAL-WORLD PRACTICE (Immersive 3-Column Spatial Grid - Unique Layout) -->
+    <section class="content-section section-bg-soft" id="section-facilities">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow"><i class="bi bi-building me-1"></i> Immersive Campus Environments</span>
+          <h2 class="section-title">Designed for Real-World Practice</h2>
+          <p class="section-subtitle">Train inside high-end commercial salon floors, medical esthetic suites, and color dispensary labs built to metropolitan specifications.</p>
+        </div>
+
+        <div class="facility-spatial-grid">
+          <!-- Space 1: Live Salon Floor -->
+          <article class="facility-spatial-card">
+            <img src="assets/images/facility_salon_clinic.jpg" alt="Full-service metropolitan salon clinic floor" class="fsc-bg-img" loading="lazy">
+            <div class="fsc-top-bar">
+              <span class="fsc-status-pill">
+                <span class="status-dot"></span> Active Clinic Floor
+              </span>
+            </div>
+            <div class="fsc-glass-overlay">
+              <h3>Full-Service Salon Floor</h3>
+              <p>24 Italian styling stations with dimmable 5500K CRI daylight rings, motorized shampoo bowls, and real guest booking desks.</p>
+              <div class="fsc-specs-pills">
+                <span class="fsc-spec-tag">24 Styling Chairs</span>
+                <span class="fsc-spec-tag">Live Clients</span>
+                <span class="fsc-spec-tag">Shampoo Bar</span>
+              </div>
+              <a href="contact.html" class="fsc-explore-btn">Book Campus Tour &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Space 2: Private Esthetic Suites -->
+          <article class="facility-spatial-card">
+            <img src="assets/images/facility_esthetic_suite.jpg" alt="Clinical esthetic suites and medi-spa beds" class="fsc-bg-img" loading="lazy">
+            <div class="fsc-top-bar">
+              <span class="fsc-status-pill">
+                <span class="status-dot"></span> Clinical Dermal Lab
+              </span>
+            </div>
+            <div class="fsc-glass-overlay">
+              <h3>Private Esthetic Suites</h3>
+              <p>Soundproof medi-spa rooms with galvanic apparatus, high-frequency wands, ultrasound exfoliation, and ergonomic facial beds.</p>
+              <div class="fsc-specs-pills">
+                <span class="fsc-spec-tag">Galvanic Devices</span>
+                <span class="fsc-spec-tag">LED Light Pods</span>
+                <span class="fsc-spec-tag">EPA Sanitized</span>
+              </div>
+              <a href="programs.html" class="fsc-explore-btn">Explore Skincare Track &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Space 3: Dispensary & Pro Formulation Lab -->
+          <article class="facility-spatial-card">
+            <img src="assets/images/facility_color_lab.jpg" alt="Cosmetic formulation lab and professional chemical dispensary" class="fsc-bg-img" loading="lazy">
+            <div class="fsc-top-bar">
+              <span class="fsc-status-pill">
+                <span class="status-dot"></span> Chemical Dispensary
+              </span>
+            </div>
+            <div class="fsc-glass-overlay">
+              <h3>Dispensary &amp; Color Lab</h3>
+              <p>Commercial-grade color dispensary with precision gram scales, swatch formulation stations, and professional nail art counters.</p>
+              <div class="fsc-specs-pills">
+                <span class="fsc-spec-tag">Digital Scales</span>
+                <span class="fsc-spec-tag">Pro Color Lines</span>
+                <span class="fsc-spec-tag">Nail Art Station</span>
+              </div>
+              <a href="programs.html" class="fsc-explore-btn">View Color Curriculum &rarr;</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Campus Spec Summary Bar -->
+        <div class="campus-spec-bar">
+          <div class="csb-item">
+            <span class="csb-num">15,000</span>
+            <span class="csb-label">Square Feet Campus</span>
+          </div>
+          <div class="csb-item">
+            <span class="csb-num">36+</span>
+            <span class="csb-label">Commercial Stations</span>
+          </div>
+          <div class="csb-item">
+            <span class="csb-num">12 : 1</span>
+            <span class="csb-label">Student-Educator Ratio</span>
+          </div>
+          <div class="csb-item">
+            <span class="csb-num">100%</span>
+            <span class="csb-label">Board-Compliant Equip</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CAMPUS TOUR CTA PANEL (LittleBloom Newsletter Panel Style) -->
+    <section class="content-section section-bg-white pre-footer-cta-section" id="section-about-cta">
+      <div class="container">
+        <div class="newsletter-panel">
+          <div class="np-inner">
+            <div class="np-emoji" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"></path></svg></div>
+            <span class="eyebrow" style="justify-content:center">Personal Campus Experience</span>
+            <h2>Experience BeautyPro in Person</h2>
+            <p>Tour our styling stations, observe live student clinical services, and meet 1-on-1 with an admissions advisor to discuss financing and program schedules.</p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+              <a href="contact.html" class="btn btn-brand btn-lg"><i class="bi bi-calendar-check me-2"></i>Schedule a Campus Tour</a>
+              <a href="programs.html" class="btn btn-soft btn-lg"><i class="bi bi-mortarboard me-2"></i>Explore Programs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <img src="assets/images/logo_dark.png" alt="BeautyPro Beauty Academy" class="brand-logo-img" width="165" height="46">
+          </div>
+          <p class="footer-desc">A premier career-focused cosmetology and beauty academy dedicated to hands-on excellence, state board licensing, and modern salon industry leadership.</p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"></line><path d="M8 8a4 4 0 0 1 8 0c0 3-2 5-4 5s-2 2-2 3"></path></svg>
+            </a>
+          </div>
+          <div>
+            <a href="login.html" class="btn btn-sm btn-outline-white">Student Login</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul class="footer-links">
+            <li><a href="programs.html" class="footer-link">&rsaquo; Cosmetology (1,500 hrs)</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Esthetics &amp; Skincare</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Nail Technology</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Makeup Artistry</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Hair Design Specialization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">&rsaquo; Home 1 (Outcomes)</a></li>
+            <li><a href="home-2.html" class="footer-link">&rsaquo; Home 2 (Editorial)</a></li>
+            <li><a href="programs.html" class="footer-link">&rsaquo; Programs</a></li>
+            <li><a href="instructors.html" class="footer-link">&rsaquo; Our Instructors</a></li>
+            <li><a href="about.html" class="footer-link">&rsaquo; About the Academy</a></li>
+            <li><a href="contact.html" class="footer-link">&rsaquo; Contact &amp; Campus Tour</a></li>
+            <li><a href="dashboard.html" class="footer-link">&rsaquo; Student Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Campus Info</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>128 Beauty Academy Way, Suite 400<br>Riverside, CA 92501</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:8001234567" style="color: inherit; text-decoration: none;">(800) 123-4567</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM<br>Sat: 9:00 AM &ndash; 3:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 BeautyPro Cosmetology &amp; Beauty School. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+</html>
