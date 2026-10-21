@@ -1078,3 +1078,109 @@
     width: 100% !important;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Mobile Controls Inside Dashboard Menu (<= 768px)
+   -------------------------------------------------------------------------- */
+.sidebar-mobile-controls {
+  display: none;
+  padding: 16px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.smc-title {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.smc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.smc-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 10px 4px;
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.smc-btn:hover {
+  background: rgba(217, 67, 120, 0.2);
+  border-color: var(--rose-pink);
+  color: #FFFFFF;
+}
+
+.smc-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.smc-btn .bell-dot {
+  position: absolute;
+  top: 8px;
+  right: calc(50% - 14px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rose-pink);
+  border: 1px solid #17212D;
+}
+
+@media (max-width: 768px) {
+  .sidebar-mobile-controls {
+    display: block !important;
+  }
+
+  .dashboard-topbar {
+    padding: 0 16px !important;
+  }
+
+  /* Move buttons inside sidebar on mobile view to eliminate collisions */
+  .dashboard-topbar .topbar-right .topbar-icon-btn {
+    display: none !important;
+  }
+
+  .topbar-left {
+    gap: 10px !important;
+  }
+
+  .topbar-brand img {
+    max-width: 125px !important;
+    height: auto !important;
+  }
+
+  .topbar-user-chip {
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    margin-left: 0 !important;
+  }
+
+  .topbar-user-chip .tuc-info {
+    display: none !important;
+  }
+
+  .topbar-user-chip .tuc-avatar {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+
