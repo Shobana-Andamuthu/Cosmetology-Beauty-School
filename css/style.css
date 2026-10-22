@@ -460,6 +460,7 @@ p:last-child {
   border-radius: var(--radius-pill);
   transition: all var(--transition-normal);
   text-align: center;
+  text-decoration: none;
   white-space: nowrap;
 }
 
@@ -490,6 +491,21 @@ p:last-child {
   border-color: var(--rose-pink);
   color: var(--rose-pink);
   background-color: var(--blush-light);
+  transform: translateY(-2px);
+}
+
+.btn-outline-brand {
+  background: var(--surface-card);
+  color: var(--rose-pink);
+  border: 1.5px solid var(--rose-pink);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline-brand:hover {
+  background: var(--rose-gradient);
+  border-color: transparent;
+  color: #FFFFFF;
+  box-shadow: var(--shadow-pink);
   transform: translateY(-2px);
 }
 
@@ -3737,12 +3753,14 @@ p:last-child {
 .program-card-rich .pc-spec {
   display: flex;
   flex-direction: column;
+  flex: 0 0 auto;
 }
 
 .program-card-rich .pc-spec-val {
   font-size: 0.86rem;
   font-weight: 800;
   color: var(--heading-text);
+  white-space: nowrap;
 }
 
 .program-card-rich .pc-spec-lbl {
@@ -3750,6 +3768,7 @@ p:last-child {
   color: var(--muted-text);
   text-transform: uppercase;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -5773,11 +5792,24 @@ p:last-child {
 .pc-footer {
   margin-top: auto !important;
   display: flex !important;
+  flex-wrap: nowrap !important;
   justify-content: space-between !important;
   align-items: center !important;
   padding-top: 1rem !important;
   border-top: 1px solid var(--border-color) !important;
   min-height: 54px !important;
+}
+
+@media (max-width: 1100px) {
+  .program-card-rich .pc-footer {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+
+  .program-card-rich .pc-footer .btn {
+    align-self: stretch;
+  }
 }
 
 /* 5. TUITION VALUE / FEATURE CARDS (.h1-feature-card in programs.html & index.html) */
