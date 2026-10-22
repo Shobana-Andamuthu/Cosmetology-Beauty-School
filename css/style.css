@@ -4983,6 +4983,17 @@ p:last-child {
   position: relative;
 }
 
+#section-about-cta .np-emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#section-about-cta .np-emoji svg {
+  display: block;
+}
+
 /* ==========================================================================
    PAGE PRELOADER (Luxury Aesthetic Animation)
    ========================================================================== */
